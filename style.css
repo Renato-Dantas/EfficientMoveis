@@ -80,23 +80,7 @@ header{
     background-color: #eaeaea;
 }
 
-.imgProj{
-    width: 600px;
-    height: 500px;
-    border: 1px solid goldenrod;
-    border-radius: 10px;
-}
-
-#img1{
-    float: left;
-    margin-top: 5px;
-}
-#img2{
-    float: right;
-    margin-top: -50px;
-}
-
-#img3{
-    margin-top: -50px;
-    float: left;
+.lightwidget-widget{
+    background-color: goldenrod;
+    border-radius: 5px;
 }
