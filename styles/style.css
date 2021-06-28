@@ -128,7 +128,7 @@ header{
 
 #contact{
     background-color: rgb(252, 248, 248);
-    height: 400px;
+    height: auto;
     border: 2px solid goldenrod;
     text-align: center;
 }
@@ -136,7 +136,8 @@ header{
 .contact-title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
-
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .ico{
@@ -155,11 +156,17 @@ header{
 .pContact{
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+.links{
+    text-decoration: underline;
+    color: blue;
 }
 
 a:visited{
@@ -168,11 +175,61 @@ a:visited{
 
 @media screen and (max-width:1086px){
     #aboutUs{
-        font-size: 14px;
+        font-size: 18px;
         text-align: center;
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    #aboutUs{
+        font-size: 16px;
+        text-align: center;
+        width: 70%;
     }
 
     #contact-title{
         font-size: 5px;
+    }
+
+    #contact{
+        height: auto;
+    }
+
+    #logo{
+        float:none;
+        display: block;
+        margin: auto;
+        height: 120px;
+        border-radius: 25px;
+    }
+
+    header{
+        height: auto;
+    }
+
+    #navigation{
+        height: auto;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 40px 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+
+    .contact-title{
+        font-size: 18px;
+    }
+
+    .pContact{
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 10px;
     }
 }
