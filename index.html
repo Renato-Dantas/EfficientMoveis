@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efficient</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
+    
 </head>
 <body>
     <header>
         <nav id = 'navigation'>
             <img id = 'logo' src="./images/logo.jpeg" >
             <ul>
-                <li class = 'menu'>Home</li>
-                <li class = 'menu'>Projetos</li>
-                <li class = 'menu'>Serviços</li>
-                <li class = 'menu'>Contato</li>
+                <a href="#aboutUs"><li class = 'menu'>Home</li></a>
+                <a href="#photos"><li class = 'menu'>Projetos</li></a>
+                <a href="#services"><li class = 'menu'>Serviços</li></a>
+                <a href="#contact"><li class = 'menu'>Contato</li></a>
             </ul>
         </nav>
     </header>
@@ -25,19 +27,48 @@
             <p id = 'p1'>Desenvolvemos ambientes planejados para atender os sonhos de nossos clietes, personalizando cada detalhe para transformar seus sonhos em realidade! <br> Venha conferir mais dos nossos projetos no instagram!</p>
         </div>
     </section>
-    <section id = 'projects'>
-        <p id = 'pProjects'>Venha conhecer alguns de nossos projetos!</p>
-        <div id = 'items-wrapper'>
-            <div id = 'images'> 
-                <img src="./images/img1.jpeg" class = 'images'>
-                <img src="./images/img2.jpeg" class = 'images'>
-                <img src="./images/img4.jpeg" class = 'images'>
-                <img src="./images/img3.jpeg" class = 'images'>
-                <img src="./images/img2.jpeg" class = 'images'>
-                <img src="./images/img4.jpeg" class = 'images'>
+    <div class="modal">
+        <div class="modal_content">
+            <img src="./images/img3.jpeg" id="modal_img">
+            <span id = 'bt_close'>&times;</span>
+        </div>
+    </div>
+    <div class="container" id = 'photos'>
+        <div class="row">
+            <div class="card_img">
+                <img src="./images/img1.jpeg" class="small">
+            </div>
+            <div class="card_img">
+                <img src="./images/img2.jpeg" class="small">
+            </div>
+            <div class="card_img">
+                <img src="./images/img4.jpeg" class="small">
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="card_img">
+                <img src="./images/img8.jpeg" class="small">
+            </div>
+            <div class="card_img">
+                <img src="./images/img9.jpeg" class="small">
+            </div>
+            <div class="card_img">
+                <img src="./images/img10.jpeg" class="small">
+            </div>
+        </div>
+        <div class="row">
+            <div class="card_img">
+                <img src="./images/img11.jpeg" class="small">
+            </div>
+            <div class="card_img">
+                <img src="./images/img12.jpeg" class="small">
+            </div>
+            <div class="card_img">
+                <img src="./images/img13.jpeg" class="small">
+            </div>
+        </div>
+    </div>
+
     <section id = 'services' >
         <div class = 'sections marcenaria'>
             <div class = 'Title'>
@@ -50,6 +81,32 @@
             </div>
         </div>
     </section>
+    <section id = 'contact'>
+        <div class="contact-title">
+            Entre em contato conosco e torne seu sonho realidade!
+        </div>
+        <div>
+            <ul class="media">
+                <a href="https://www.instagram.com/efficient.marcenaria/" target="_blank"><img src="./icons/insta.png" class="ico"></a>
+                <a href="#"><img src="./icons/face.png" class="ico"></a>
+                <a href="#"></a><img src="./icons/linkedin.png" class="ico"></a>
+            </ul>
+            <p class = 'pContact'>Ligue e marcamos uma conversa! <br>
+                <a href="tel:+55 19 99256-2619">Tel: (19) 99256-2619</a><br>
+                <a href="tel:+55 19 98326-2769">Tel: (19) 98326-2769</a><br>
+            </p><br>
+            <p class = 'pContact'>Você também pode mandar um email para: 
+                <a href = "mailto: abc@example.com">to+_htinha@bada.com</a>
+            </p>
+            <p class = 'pContact'> Rua do To+ perto da Casa do To+ <br>Hortolândia-SP</p>
 
+        </div>
+    </section>
+
+
+
+
+
+    <script src="galeria.js"></script>
 </body>
 </html>
