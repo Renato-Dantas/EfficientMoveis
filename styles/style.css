@@ -207,10 +207,15 @@ a:visited{
 
     header{
         height: auto;
+        border: 1px solid goldenrod;
     }
 
     #navigation{
         height: auto;
+    }
+
+    #list{
+        border: 1px solid goldenrod;
     }
 
     .menu{
